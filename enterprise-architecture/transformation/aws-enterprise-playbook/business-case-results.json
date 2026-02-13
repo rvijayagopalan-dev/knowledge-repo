@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-02-12T21:26:14.307749",
+  "inputs": {
+    "current_annual_cost": 500000.0,
+    "aws_annual_cost": 350000.0,
+    "implementation_cost": 200000.0,
+    "analysis_years": 5,
+    "discount_rate": 0.1
+  },
+  "metrics": {
+    "annual_savings": 150000.0,
+    "total_benefits": 750000.0,
+    "roi_percentage": 28.21,
+    "npv": 368618.02,
+    "payback_months": 16.0,
+    "irr_percentage": 150.0
+  },
+  "cash_flow_analysis": [
+    {
+      "year": 0,
+      "investment": -200000.0,
+      "benefits": 0,
+      "net_cash_flow": -200000.0,
+      "cumulative_cash_flow": -200000.0
+    },
+    {
+      "year": 1,
+      "investment": 0,
+      "benefits": 75000.0,
+      "net_cash_flow": 75000.0,
+      "cumulative_cash_flow": -125000.0
+    },
+    {
+      "year": 2,
+      "investment": 0,
+      "benefits": 150000.0,
+      "net_cash_flow": 150000.0,
+      "cumulative_cash_flow": 25000.0
+    },
+    {
+      "year": 3,
+      "investment": 0,
+      "benefits": 150000.0,
+      "net_cash_flow": 150000.0,
+      "cumulative_cash_flow": 175000.0
+    },
+    {
+      "year": 4,
+      "investment": 0,
+      "benefits": 150000.0,
+      "net_cash_flow": 150000.0,
+      "cumulative_cash_flow": 325000.0
+    },
+    {
+      "year": 5,
+      "investment": 0,
+      "benefits": 150000.0,
+      "net_cash_flow": 150000.0,
+      "cumulative_cash_flow": 475000.0
+    }
+  ]
+}

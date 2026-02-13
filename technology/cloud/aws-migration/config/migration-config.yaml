@@ -1,0 +1,34 @@
+migration:
+  source:
+    environment: on-premise
+    databases:
+      - name: users-db
+        type: postgresql
+        host: 192.168.1.10
+        port: 5432
+        size_gb: 50
+      - name: orders-db
+        type: postgresql
+        host: 192.168.1.11
+        port: 5432
+        size_gb: 100
+
+    storage:
+      - path: /data/files
+        size_gb: 500
+        type: file-storage
+
+  target:
+    region: us-east-1
+    environment: production
+    services:
+      - name: user-service
+        type: ecs
+        cpu: 512
+        memory: 1024
+        container_port: 8080
+      - name: order-service
+        type: ecs
+        cpu: 1024
+        memory: 2048
+        container_port: 8080

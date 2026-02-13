@@ -1,0 +1,77 @@
+# AWS Enterprise Transformation Playbook - Python Dependencies
+
+# Core AWS SDK
+boto3==1.34.44
+botocore==1.34.44
+
+# Data Processing & Analysis
+pandas==2.2.0
+numpy==1.26.3
+
+# Report Generation
+reportlab==4.0.9                    # PDF generation
+matplotlib==3.8.2                   # Charts and visualizations
+seaborn==0.13.1                     # Statistical visualizations
+Pillow==10.2.0                     # Image processing
+
+# Configuration Management
+PyYAML==6.0.1
+python-dotenv==1.0.1
+
+# CLI & User Interface
+click==8.1.7
+rich==13.7.1                        # Beautiful terminal output
+tabulate==0.9.0                    # Table formatting
+questionary==2.0.1                 # Interactive prompts
+
+# Date & Time
+python-dateutil==2.8.2
+
+# HTTP & APIs
+requests==2.31.0
+urllib3==2.1.0
+
+# Email
+sendgrid==6.11.0                   # Email notifications (optional)
+
+# Excel Generation
+openpyxl==3.1.2                   # Excel file creation
+xlsxwriter==3.1.9                 # Excel formatting
+
+# HTML/Markdown Processing
+markdown==3.5.2
+jinja2==3.1.3                     # Template engine
+beautifulsoup4==4.12.3            # HTML parsing
+
+# Financial Calculations
+scipy==1.12.0                     # Scientific computing
+
+# Dashboard Generation
+plotly==5.18.0                    # Interactive dashboards
+dash==2.14.2                      # Dashboard framework (optional)
+
+# Logging
+colorlog==6.8.2
+
+# Testing (for script development)
+pytest==7.4.4
+pytest-cov==4.1.0
+
+# Code Quality
+black==24.1.1                     # Code formatter
+flake8==7.0.0                     # Linter
+mypy==1.8.0                       # Type checking
+
+# Utilities
+tqdm==4.66.1                      # Progress bars
+python-json-logger==2.0.7         # JSON logging
+
+# AWS-Specific Tools
+aws-sam-cli==1.108.0              # AWS SAM (optional)
+cfn-lint==0.85.1                  # CloudFormation linter (optional)
+
+# Security & Compliance
+checkov==3.2.0                    # Infrastructure security scanning (optional)
+
+# Cost Optimization
+aws-cost-explorer==0.1.0          # Cost analysis (optional)

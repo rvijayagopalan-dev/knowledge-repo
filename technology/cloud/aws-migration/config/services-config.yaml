@@ -1,0 +1,17 @@
+services:
+  - name: user-service
+    port: 8080
+    health_check: /health
+    environment:
+      - DATABASE_URL: ${USER_DB_ENDPOINT}
+      - REDIS_URL: ${REDIS_ENDPOINT}
+    dependencies: []
+
+  - name: order-service
+    port: 8080
+    health_check: /health
+    environment:
+      - DATABASE_URL: ${ORDER_DB_ENDPOINT}
+      - USER_SERVICE_URL: ${USER_SERVICE_URL}
+    dependencies:
+      - user-service
