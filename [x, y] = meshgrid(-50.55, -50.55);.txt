@@ -1,0 +1,36 @@
+[x, y] = meshgrid(-5:0.5:5, -5:0.5:5);   % create grid of x,y values
+z = x + y;                               % define the plane
+mesh(x, y, z);                           % 3D wireframe plot
+xlabel('x');
+ylabel('y');
+zlabel('z');
+title('Plane z = x + y');
+grid on;
+rotate3d on;
+
+plot3(0,0,0,'ko','MarkerSize',8,'LineWidth',2);  % origin
+
+figure; hold on; grid on;
+
+% ----- Origin -----
+plot3(0,0,0,'ko','MarkerSize',8,'LineWidth',2);  % black dot at origin
+
+% ----- Define vectors -----
+C1 = [1, 0, 1];
+C2 = [0, 1, 1];
+
+% ----- Plot vectors from origin -----
+quiver3(0,0,0, C1(1), C1(2), C1(3), ...
+        0, 'r', 'LineWidth', 2, 'MaxHeadSize', 1);
+
+quiver3(0,0,0, C2(1), C2(2), C2(3), ...
+        0, 'b', 'LineWidth', 2, 'MaxHeadSize', 1);
+
+% ----- Labels and view -----
+xlabel('x'); ylabel('y'); zlabel('z');
+title('Vectors C1 = (1,0,1) (red) and C2 = (0,1,1) (blue)');
+axis equal;
+axis([-1 2 -1 2 0 2]);
+view(30,25);
+
+hold off;

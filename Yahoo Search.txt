@@ -1,0 +1,64 @@
+Yahoo Search 
+
+Different Categories of News Articles 
+Multiple Arcticles 
+Games, Music, 
+
+Click on Articles 
+
+
+Track how uses visited that article 
+
+Which user spent long time on particular page, Session or IP Address 
+
+
+
+Article
+	article_id
+	article_category_id
+	article_name
+	article_link
+
+
+Article Category 
+	article_category_id
+	article_categiry_name
+	article_category_tags
+
+User
+	user_id
+	user_name
+	user_ip
+	user_session
+
+User_Article (Mapping/ Transaction)
+	user_id
+	article_id
+	time_spent
+
+user_article_Stats (View)
+	user_count_article
+        
+user_article_timespent_stats (View)
+	user_id
+	article_id
+	timespent
+	user_count 
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+Search Keywords  -> Search Category -> Search Index 
+
+
+		     Search Rank 

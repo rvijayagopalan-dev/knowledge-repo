@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: crud-demo
+
+  # GraphQL Configuration
+  graphql:
+    graphiql:
+      enabled: true
+      path: /graphiql
+    path: /graphql
+    schema:
+      printer:
+        enabled: true
+
+# gRPC Configuration
+grpc:
+  server:
+    port: 9090
+
+# Logging Configuration
+logging:
+  level:
+    root: INFO
+    com.example.crud: DEBUG
+    org.springframework.web: INFO
+    org.springframework.graphql: DEBUG
