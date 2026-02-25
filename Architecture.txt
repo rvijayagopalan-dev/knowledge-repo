@@ -1,9 +1,0 @@
-Architecture	
-Security	
-Compliance	
-Infra	
-CI/CD	
-Audit	
-Board readiness	
-SaaS readiness	
-Regulated readiness
